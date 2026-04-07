@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 32px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 25px;
+}
+
+.timer-display {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    color: #1e293b;
+    margin-bottom: 35px;
+    padding: 25px;
+    background: #f1f5f9;
+    border-radius: 24px;
+    letter-spacing: 4px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.02), 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.timer-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timer-buttons button {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer-buttons button:active {
+    transform: scale(0.96);
+}
+
+#startBtn {
+    background-color: #10b981;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #059669;
+    box-shadow: 0 8px 15px rgba(16, 185, 129, 0.3);
+}
+
+#stopBtn {
+    background-color: #ef4444;
+    color: white;
+}
+
+#stopBtn:hover {
+    background-color: #dc2626;
+    box-shadow: 0 8px 15px rgba(239, 68, 68, 0.3);
+}
+
+#resetBtn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: #2563eb;
+    box-shadow: 0 8px 15px rgba(59, 130, 246, 0.3);
+}
